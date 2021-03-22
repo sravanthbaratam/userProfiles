@@ -1,0 +1,13 @@
+1. Download data from https://s3-ap-southeast-1.amazonaws.com/he-public-data/users49b8675.json.
+2. Create a local mongodb collection called 'users' in 'local' db and import the data that collection using the able json file.
+3. Start the api server:
+ - cd backend
+ - npm install
+ - npm run dev
+4. Your api is servering at 3002 port.
+5 Start ur UI by:
+ - cd react-user-user-profile
+ - npm i 
+ - npm start
+ 
+https://github.com/sravanthbaratam/userProfiles
