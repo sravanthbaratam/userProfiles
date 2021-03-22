@@ -51,17 +51,17 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
                 })
             .catch(error => console.error(error))
         })
-        
+
     //to update the record
     app.put('/users', (req, res) => {
         console.log(req.body)
         usersCollection.findOneAndUpdate(
-            { name: 'Yoda' },
+            { name: req.body.name },
             {
                 $set: {
                   name: req.body.name,
-                  Image: req.body.quote,
-                  //id: req.body.id
+                  Image: req.body.Image,
+                  id: req.body.id
                 }
               },
             {
